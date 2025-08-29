@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Pilot - Smart Asset Management for Service Centers</title>
+    <meta name="description" content="Streamline your IT equipment repair operations with real-time tracking, intelligent parts management, and comprehensive reporting.">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/ab211233.png" alt="Asset Pilot Logo" class="logo-img">
+                <span class="brand-text">Asset Pilot</span>
+            </a>
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn--primary btn-cta" href="#gallery">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Smart Asset Management for Service Centers</h1>
+                    <p class="hero-subtitle">Streamline your IT equipment repair operations with real-time tracking, intelligent parts management, and comprehensive reporting.</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="500">0</div>
+                            <div class="stat-label">Service Centers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="10">0</div>
+                            <div class="stat-label">K+ Assets Managed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="25">0</div>
+                            <div class="stat-label">K+ Repairs Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="99.9">0</div>
+                            <div class="stat-label">% Uptime</div>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#gallery" class="btn btn--primary btn--lg">Explore Gallery</a>
+                        <a href="#features" class="btn btn--outline btn--lg">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <div class="screen-content active" data-screen="0">
+                                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/d458bdf9.png" alt="Login Screen" class="screen-image">
+                                </div>
+                                <div class="screen-content" data-screen="1">
+                                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/c6474fc7.png" alt="Dashboard" class="screen-image">
+                                </div>
+                                <div class="screen-content" data-screen="2">
+                                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/f5b7e688.png" alt="App Menu" class="screen-image">
+                                </div>
+                                <div class="screen-content" data-screen="3">
+                                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/fb9d3148.png" alt="Complaint List" class="screen-image">
+                                </div>
+                                <div class="screen-content" data-screen="4">
+                                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/4d9050d9.png" alt="Parts Management" class="screen-image">
+                                </div>
+                                <div class="screen-content" data-screen="5">
+                                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/ffea46fc.png" alt="Notifications" class="screen-image">
+                                </div>
+                            </div>
+                            <div class="phone-notch"></div>
+                            <div class="phone-button"></div>
+                        </div>
+                        <div class="phone-indicator">
+                            <span class="screen-title">Secure Login</span>
+                            <span class="screen-description">Role-based authentication system</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful Features for Modern Service Centers</h2>
+                <p class="section-subtitle">Everything you need to manage IT equipment repairs efficiently</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="feature-image">
+                        <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/c6474fc7.png" alt="Dashboard" class="img-fluid">
+                    </div>
+                    <h4>Real-Time Asset Tracking</h4>
+                    <p>Track which engineer has which asset, monitor repair status, and manage visit-wise data with problems, solutions, and remarks.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="feature-image">
+                        <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/4d9050d9.png" alt="Parts Management" class="img-fluid">
+                    </div>
+                    <h4>Smart Parts Management</h4>
+                    <p>Engineers can request parts, track stock history, pre-assign components, and manage inventory with detailed invoice documentation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <div class="feature-image">
+                        <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/c6474fc7.png" alt="Dashboard" class="img-fluid">
+                    </div>
+                    <h4>Role-Based Dashboards</h4>
+                    <p>Customized dashboards for managers, coordinators, and engineers with relevant data and permissions for each specific role.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="feature-image">
+                        <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/5dee3a91.png" alt="Stock History" class="img-fluid">
+                    </div>
+                    <h4>Comprehensive Reporting</h4>
+                    <p>Generate detailed reports on call counts, part usage, pending requests, and activity logs with advanced date range filters.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <div class="feature-image">
+                        <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/ffea46fc.png" alt="Notifications" class="img-fluid">
+                    </div>
+                    <h4>Notification System</h4>
+                    <p>Real-time notifications for add/deplete requests, approvals, and task assignments across all user roles and departments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="feature-image">
+                        <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/5264aa70.png" alt="Asset Images" class="img-fluid">
+                    </div>
+                    <h4>Complete Documentation</h4>
+                    <p>Attach photos for stock items, repair assets, user profiles, and invoice documentation for complete record keeping and audit trails.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Application Gallery</h2>
+                <p class="section-subtitle">Explore all Asset Pilot features through real application screenshots</p>
+            </div>
+            
+            <!-- Gallery Filters -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Features</button>
+                <button class="filter-btn" data-filter="dashboard">Dashboard</button>
+                <button class="filter-btn" data-filter="complaints">Complaints</button>
+                <button class="filter-btn" data-filter="assets">Assets</button>
+                <button class="filter-btn" data-filter="inventory">Inventory</button>
+                <button class="filter-btn" data-filter="users">Users</button>
+                <button class="filter-btn" data-filter="auth">Authentication</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Dashboard & Analytics -->
+                <div class="gallery-item" data-category="dashboard">
+                    <div class="gallery-card">
+                        <div class="gallery-image" style="aspect-ratio: 0.45;">
+                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/c6474fc7.png" alt="Role-Based Dashboard">
+                            <div class="gallery-overlay">
+                                <div class="gallery-overlay-content">
+                                    <h5>Role-Based Dashboard</h5>
+                                    <p>Interactive dashboard showing key metrics, ongoing repairs, pending tasks, and performance analytics tailored to user roles</p>
+                                    <button class="btn btn--light btn--sm" onclick="openLightbox(this)">
+                                        <i class="fas fa-expand"></i> View Full
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="gallery-category" style="background-color: var(--color-bg-1);">Dashboard & Analytics</span>
+                            <h6>Role-Based Dashboard</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Complaint Management -->
+                <div class="gallery-item" data-category="complaints">
+                    <div class="gallery-card">
+                        <div class="gallery-image" style="aspect-ratio: 0.48;">
+                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/4182bf05.png" alt="Create New Complaint">
+                            <div class="gallery-overlay">
+                                <div class="gallery-overlay-content">
+                                    <h5>Create New Complaint</h5>
+                                    <p>Intuitive form for creating new service complaints with asset details, customer information, and initial problem assessment</p>
+                                    <button class="btn btn--light btn--sm" onclick="openLightbox(this)">
+                                        <i class="fas fa-expand"></i> View Full
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="gallery-category" style="background-color: var(--color-bg-2);">Complaint Management</span>
+                            <h6>Create New Complaint</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="complaints">
+                    <div class="gallery-card">
+                        <div class="gallery-image" style="aspect-ratio: 0.49;">
+                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/ed988fca.png" alt="Detailed Complaint Form">
+                            <div class="gallery-overlay">
+                                <div class="gallery-overlay-content">
+                                    <h5>Detailed Complaint Form</h5>
+                                    <p>Comprehensive complaint entry with machine details, customer info, asset tracking, and repair specifications</p>
+                                    <button class="btn btn--light btn--sm" onclick="openLightbox(this)">
+                                        <i class="fas fa-expand"></i> View Full
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="gallery-category" style="background-color: var(--color-bg-2);">Complaint Management</span>
+                            <h6>Detailed Complaint Form</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="complaints">
+                    <div class="gallery-card">
+                        <div class="gallery-image" style="aspect-ratio: 0.48;">
+                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/fb9d3148.png" alt="Complaint List View">
+                            <div class="gallery-overlay">
+                                <div class="gallery-overlay-content">
+                                    <h5>Complaint List View</h5>
+                                    <p>Overview of all service complaints with status tracking, priority levels, and quick action buttons</p>
+                                    <button class="btn btn--light btn--sm" onclick="openLightbox(this)">
+                                        <i class="fas fa-expand"></i> View Full
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="gallery-category" style="background-color: var(--color-bg-2);">Complaint Management</span>
+                            <h6>Complaint List View</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Asset Management -->
+                <div class="gallery-item" data-category="assets">
+                    <div class="gallery-card">
+                        <div class="gallery-image" style="aspect-ratio: 0.49;">
+                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/5264aa70.png" alt="Asset Image Documentation">
+                            <div class="gallery-overlay">
+                                <div class="gallery-overlay-content">
+                                    <h5>Asset Image Documentation</h5>
+                                    <p>Photo management system for assets with before/after repair images and comprehensive documentation</p>
+                                    <button class="btn btn--light btn--sm" onclick="openLightbox(this)">
+                                        <i class="fas fa-expand"></i> View Full
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="gallery-category" style="background-color: var(--color-bg-3);">Asset Management</span>
+                            <h6>Asset Image Documentation</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Parts & Inventory -->
+                <div class="gallery-item" data-category="inventory">
+                    <div class="gallery-card">
+                        <div class="gallery-image" style="aspect-ratio: 0.49;">
+                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/4d9050d9.png" alt="Parts Management Interface">
+                            <div class="gallery-overlay">
+                                <div class="gallery-overlay-content">
+                                    <h5>Parts Management Interface</h5>
+                                    <p>Comprehensive parts inventory system with request management, stock levels, and approval workflows</p>
+                                    <button class="btn btn--light btn--sm" onclick="openLightbox(this)">
+                                        <i class="fas fa-expand"></i> View Full
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="gallery-category" style="background-color: var(--color-bg-4);">Parts & Inventory</span>
+                            <h6>Parts Management Interface</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stock Management -->
+                <div class="gallery-item" data-category="inventory">
+                    <div class="gallery-card">
+                        <div class="gallery-image" style="aspect-ratio: 0.75;">
+                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/fd27c8f6.png" alt="Stock Inventory List">
+                            <div class="gallery-overlay">
+                                <div class="gallery-overlay-content">
+                                    <h5>Stock Inventory List</h5>
+                                    <p>Complete inventory listing with quantities, part numbers, availability status, and search functionality</p>
+                                    <button class="btn btn--light btn--sm" onclick="openLightbox(this)">
+                                        <i class="fas fa-expand"></i> View Full
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="gallery-category" style="background-color: var(--color-bg-5);">Stock Management</span>
+                            <h6>Stock Inventory List</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="inventory">
+                    <div class="gallery-card">
+                        <div class="gallery-image" style="aspect-ratio: 0.49;">
+                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/f4e9b3d4.png" alt="Detailed Stock Information">
+                            <div class="gallery-overlay">
+                                <div class="gallery-overlay-content">
+                                    <h5>Detailed Stock Information</h5>
+                                    <p>Individual stock item details with usage history, supplier information, and automated reorder points</p>
+                                    <button class="btn btn--light btn--sm" onclick="openLightbox(this)">
+                                        <i class="fas fa-expand"></i> View Full
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="gallery-category" style="background-color: var(--color-bg-5);">Stock Management</span>
+                            <h6>Detailed Stock Information</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="inventory">
+                    <div class="gallery-card">
+                        <div class="gallery-image" style="aspect-ratio: 0.49;">
+                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/5dee3a91.png" alt="Stock Usage History">
+                            <div class="gallery-overlay">
+                                <div class="gallery-overlay-content">
+                                    <h5>Stock Usage History</h5>
+                                    <p>Historical tracking of stock usage across different assets and repair jobs with detailed analytics</p>
+                                    <button class="btn btn--light btn--sm" onclick="openLightbox(this)">
+                                        <i class="fas fa-expand"></i> View Full
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="gallery-category" style="background-color: var(--color-bg-5);">Stock Management</span>
+                            <h6>Stock Usage History</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Management -->
+                <div class="gallery-item" data-category="users">
+                    <div class="gallery-card">
+                        <div class="gallery-image" style="aspect-ratio: 0.49;">
+                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/098dc426.png" alt="User Management System">
+                            <div class="gallery-overlay">
+                                <div class="gallery-overlay-content">
+                                    <h5>User Management System</h5>
+                                    <p>Comprehensive user administration with role assignments, permissions, and organizational hierarchy management</p>
+                                    <button class="btn btn--light btn--sm" onclick="openLightbox(this)">
+                                        <i class="fas fa-expand"></i> View Full
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="gallery-category" style="background-color: var(--color-bg-6);">User Management</span>
+                            <h6>User Management System</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notifications -->
+                <div class="gallery-item" data-category="notifications">
+                    <div class="gallery-card">
+                        <div class="gallery-image" style="aspect-ratio: 0.49;">
+                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/ffea46fc.png" alt="Notification Center">
+                            <div class="gallery-overlay">
+                                <div class="gallery-overlay-content">
+                                    <h5>Notification Center</h5>
+                                    <p>Real-time notifications for part requests, approvals, task assignments, and critical system updates</p>
+                                    <button class="btn btn--light btn--sm" onclick="openLightbox(this)">
+                                        <i class="fas fa-expand"></i> View Full
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="gallery-category" style="background-color: var(--color-bg-7);">Notifications</span>
+                            <h6>Notification Center</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Completion -->
+                <div class="gallery-item" data-category="completion">
+                    <div class="gallery-card">
+                        <div class="gallery-image" style="aspect-ratio: 0.48;">
+                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/ed750262.png" alt="Service Completion & Pricing">
+                            <div class="gallery-overlay">
+                                <div class="gallery-overlay-content">
+                                    <h5>Service Completion & Pricing</h5>
+                                    <p>Final service completion interface with detailed pricing, labor costs, and comprehensive customer billing</p>
+                                    <button class="btn btn--light btn--sm" onclick="openLightbox(this)">
+                                        <i class="fas fa-expand"></i> View Full
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="gallery-category" style="background-color: var(--color-bg-8);">Service Completion</span>
+                            <h6>Service Completion & Pricing</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Authentication -->
+                <div class="gallery-item" data-category="auth">
+                    <div class="gallery-card">
+                        <div class="gallery-image" style="aspect-ratio: 0.49;">
+                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/d458bdf9.png" alt="Secure Login Interface">
+                            <div class="gallery-overlay">
+                                <div class="gallery-overlay-content">
+                                    <h5>Secure Login Interface</h5>
+                                    <p>Role-based authentication system with secure login for managers, coordinators, and engineers</p>
+                                    <button class="btn btn--light btn--sm" onclick="openLightbox(this)">
+                                        <i class="fas fa-expand"></i> View Full
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="gallery-category" style="background-color: var(--color-bg-1);">Authentication & Navigation</span>
+                            <h6>Secure Login Interface</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="auth">
+                    <div class="gallery-card">
+                        <div class="gallery-image" style="aspect-ratio: 0.49;">
+                            <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/f5b7e688.png" alt="Application Menu">
+                            <div class="gallery-overlay">
+                                <div class="gallery-overlay-content">
+                                    <h5>Application Menu</h5>
+                                    <p>Intuitive navigation menu providing seamless access to all application features and modules</p>
+                                    <button class="btn btn--light btn--sm" onclick="openLightbox(this)">
+                                        <i class="fas fa-expand"></i> View Full
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <span class="gallery-category" style="background-color: var(--color-bg-1);">Authentication & Navigation</span>
+                            <h6>Application Menu</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal hidden" id="lightboxModal">
+        <div class="lightbox-backdrop"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="lightbox-image-container">
+                <img src="" alt="" id="lightboxImage">
+            </div>
+            <div class="lightbox-info">
+                <h4 id="lightboxTitle"></h4>
+                <p id="lightboxDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Asset Pilot</h2>
+                    <p class="about-lead">We're dedicated to revolutionizing how service centers manage IT equipment repairs.</p>
+                    <p>Asset Pilot was born from the need to streamline complex repair operations. Our comprehensive platform provides service centers with the tools they need to track assets, manage inventory, coordinate teams, and deliver exceptional service to their customers.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Real-time asset tracking and management</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Comprehensive parts and inventory control</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Role-based access and permissions</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Advanced reporting and analytics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image">
+                        <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/c6474fc7.png" alt="About Asset Pilot">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Trusted by service centers worldwide</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Asset Pilot has revolutionized our repair operations. We can now track every asset and part in real-time with incredible accuracy."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h6>John Smith</h6>
+                            <span>Service Manager, TechFix Solutions</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The notification system and role-based dashboards have improved our team coordination and efficiency significantly."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h6>Sarah Johnson</h6>
+                            <span>Operations Coordinator, Quick Repair Pro</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"I love how easy it is to request parts and update repair status. The mobile interface is incredibly intuitive and user-friendly."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h6>Mike Chen</h6>
+                            <span>Field Engineer, IT Support Hub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Ready to transform your service center operations?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company" class="form-label">Company Name</label>
+                            <input type="text" class="form-control" id="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--lg btn--full-width">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h6>Email</h6>
+                            <a href="mailto:info@assetpilot.com" target="_blank">info@assetpilot.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h6>Phone</h6>
+                            <a href="tel:+15551234567" target="_blank">+1 (555) 123-4567</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h6>Address</h6>
+                            <p>123 Tech Street<br>Innovation City, IC 12345</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/57978ca4b5a663170f1aa16f28379115/569f0f3b-3403-46e7-8072-32a751f2db99/ab211233.png" alt="Asset Pilot Logo" class="footer-logo">
+                    <h5>Asset Pilot</h5>
+                    <p>Smart Asset Management for Service Centers</p>
+                </div>
+                <div class="footer-links-group">
+                    <div class="footer-links-column">
+                        <h6>Product</h6>
+                        <ul class="footer-links">
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#about">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h6>Company</h6>
+                        <ul class="footer-links">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#contact" target="_blank">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h6>Resources</h6>
+                        <ul class="footer-links">
+                            <li><a href="#contact" target="_blank">Documentation</a></li>
+                            <li><a href="#contact" target="_blank">Help Center</a></li>
+                            <li><a href="#contact" target="_blank">API</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2025 Asset Pilot. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
